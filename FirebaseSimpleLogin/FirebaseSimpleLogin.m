@@ -16,7 +16,6 @@
 #import "FATypedefs.h"
 #import "FATypes.h"
 #import "FAUser_Private.h"
-#import "FAGitHash.h"
 #import "FAUtilities.h"
 
 @interface FATupleCallbackData : NSObject
@@ -72,9 +71,9 @@ static NSString *const FIREBASE_AUTH_PATH_TWITTERTOKEN = @"/auth/twitter/token";
 @synthesize store;
 @synthesize options;
 
-+ (NSString *) sdkVersion {
-    return [NSString stringWithFormat:@"%@_%@_%@", FIREBASE_AUTH_PATH_SEMVER, kFirebaseSimpleLoginBuildDate, kFirebaseSimpleLoginGitHash];
-}
+//+ (NSString *) sdkVersion {
+//    return [NSString stringWithFormat:@"%@_%@_%@", FIREBASE_AUTH_PATH_SEMVER, kFirebaseSimpleLoginBuildDate, kFirebaseSimpleLoginGitHash];
+//}
 
 + (void) setLoggingEnabled:(BOOL)enabled {
     [FAUtilities setLoggingEnabled:enabled];
@@ -755,7 +754,7 @@ static NSString *const FIREBASE_AUTH_PATH_TWITTERTOKEN = @"/auth/twitter/token";
 
 - (void) onInvalidArgWithError:(NSError*)error AndUserCallback:(fabt_void_nserror_user)callback {
     fabt_void_void cb = ^{
-        callback(error, YES);
+        callback(error, nil);
     };
     [self performSelector:@selector(executeCallback:) withObject:[cb copy] afterDelay:0];
 }
