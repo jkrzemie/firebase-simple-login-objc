@@ -44,7 +44,6 @@
 		378633EA16F0269700AAA749 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378633E816F0268800AAA749 /* Accounts.framework */; };
 		378633F116F0336A00AAA749 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378633F016F0336A00AAA749 /* Social.framework */; };
 		3786340416F16DF200AAA749 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378633F016F0336A00AAA749 /* Social.framework */; };
-		37DAD5ED16F8C7C30052EA3C /* FAGitHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DAD5EC16F8C7C30052EA3C /* FAGitHash.h */; };
 		37DAD5F616F92E1A0052EA3C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DAD5F516F92E1A0052EA3C /* libicucore.dylib */; };
 		37DAD5F816F92E390052EA3C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DAD5F716F92E390052EA3C /* CFNetwork.framework */; };
 		37DAD5FA16F92E3F0052EA3C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DAD5F916F92E3F0052EA3C /* Security.framework */; };
@@ -108,7 +107,6 @@
 		378633E816F0268800AAA749 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		378633F016F0336A00AAA749 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		37DAD5E316F7E9EC0052EA3C /* FAUser_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAUser_Private.h; sourceTree = "<group>"; };
-		37DAD5EC16F8C7C30052EA3C /* FAGitHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAGitHash.h; sourceTree = "<group>"; };
 		37DAD5F516F92E1A0052EA3C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		37DAD5F716F92E390052EA3C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		37DAD5F916F92E3F0052EA3C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -203,7 +201,6 @@
 		3786338916ED799200AAA749 /* FirebaseSimpleLogin */ = {
 			isa = PBXGroup;
 			children = (
-				37DAD5EC16F8C7C30052EA3C /* FAGitHash.h */,
 				37DAD5E316F7E9EC0052EA3C /* FAUser_Private.h */,
 				3786338C16ED799200AAA749 /* FirebaseSimpleLogin.h */,
 				3786338E16ED799300AAA749 /* FirebaseSimpleLogin.m */,
@@ -278,7 +275,6 @@
 				378633D616EE547400AAA749 /* FAValidation.h in Headers */,
 				378633DA16EE59E800AAA749 /* NSString+FAURLUtils.h in Headers */,
 				378633DD16EE66F400AAA749 /* FATypedefs.h in Headers */,
-				37DAD5ED16F8C7C30052EA3C /* FAGitHash.h in Headers */,
 				C8535580EE840F4E7C69E49E /* FAUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
