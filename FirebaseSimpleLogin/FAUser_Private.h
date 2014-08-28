@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Firebase. All rights reserved.
 //
 
-#import <FirebaseSimpleLogin/FirebaseSimpleLogin.h>
+#import "FirebaseSimpleLogin.h"
 
 @interface FAUser ()
 

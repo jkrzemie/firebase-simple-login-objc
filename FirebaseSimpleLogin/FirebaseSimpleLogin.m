@@ -755,7 +755,7 @@ static NSString *const FIREBASE_AUTH_PATH_TWITTERTOKEN = @"/auth/twitter/token";
 
 - (void) onInvalidArgWithError:(NSError*)error AndUserCallback:(fabt_void_nserror_user)callback {
     fabt_void_void cb = ^{
-        callback(error, nil);
+        callback(error, YES);
     };
     [self performSelector:@selector(executeCallback:) withObject:[cb copy] afterDelay:0];
 }
